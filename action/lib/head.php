@@ -4,6 +4,7 @@ $URL_SUFFIX=".html";
 $CMT_SUFFIX=".xml";
 $LIST_SIZE=15;//how many lists per page
 $mysqlpw="";
+$ADMIN_PASSWD="use your password here";
 
 function seg($tag, $val){
 	return "<".$tag.">".$val."</".$tag.">";
