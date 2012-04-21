@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once("lib/head.php");
 if( !isset($_SESSION['admin']) || !isset($_POST['u']) || !isset($_POST['p']) || !isset($_POST['n']) ){
 	return;
 }
