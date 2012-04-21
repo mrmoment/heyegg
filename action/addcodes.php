@@ -13,7 +13,6 @@ if( strcmp($uname,"maxadmin")!=0 || strcmp($passwd,"$ADMIN_PASSWD")!=0 ){
 }
 print "<p>Start...</p>";
 $num=$_POST['n'];
-include_once("lib/head.php");
 $CODE_LEN=12;
 $conn= mysql_connect("localhost", "root", "$mysqlpw") or die("Could not connect: " . mysql_error());
 mysql_select_db('eggsys',$conn);
