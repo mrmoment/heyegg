@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>黑蛋 | 新人加入</title>
+<link rel="stylesheet" type="text/css" href="jsMessage/codebase/themes/message_growl_dark.css">
+<link href="res/style.css" rel="stylesheet" type="text/css" />
+<link href="res/effect.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="res/jquery-1.6.2.min.js"></script>
+<script language="javascript" src="res/extool.js?v=0.1"></script>
+<script language="javascript" src="res/md5-min.js"></script>
+<script language="javascript" src="res/hey.js"></script>
+<script type="text/javascript" src='jsMessage/codebase/message.js'></script>
+<style>
+#new_form{
+	width: 480px;
+	margin: auto;
+	margin-top: 60px;
+	font-size:14px;
+	font-weight:bold;
+}
+#new_form a{
+	font-size:13px;
+	color: #0099cc;
+}
+#new_form input{
+	background: url(img/login_input0.png) no-repeat;
+	width: 310px;
+	padding:0 6px;
+	height: 43px;
+	border: none;
+	display: block;
+	position: relative;
+	-webkit-appearance:none;
+}
+#new_form input.selected{
+	background: url(img/login_input1.png) no-repeat;
+	color:#333;
+}
+</style>
+</head>
+
+<body>
+<div id="topbar">
+	<div id="btm_border"></div>
+	<div id="logo" onclick="window.open('index.php');"></div>
+</div>
+<div id="main">
+	<div id="view" style="background:url(img/overlaylight.png) 0 -8px;">
+		<div id="new_form">
+			<img  src="img/welcome.jpg" style="border-radius:2px; border: 4px solid #fff; box-shadow:0 0 8px #000;" />
+			<p><label>*&nbsp;注册邮箱:</label><a>&nbsp;(建议输入常用邮箱)</a><br />
+			<input type="text" name="mail" id="mail" maxlength="255"  onfocus="this.className='selected';" onblur="this.className='';" /></p>
+			<p><label>*&nbsp;密码:</label><a>&nbsp;&nbsp;(6-18个字符,由字母、数字、符号组成，区分大小写)</a><br />
+			<input type="password" name="pw" id="passwd" maxlength="18" onfocus="this.className='selected';" onblur="this.className='';"  /></p>	
+			<p><label>*&nbsp;确认密码:</label><a>&nbsp;(再输入一次密码)</a><br />
+			<input type="password" name="passwd2" id="passwd2" maxlength="18" onfocus="this.className='selected';" onblur="this.className='';"  /></p>						
+			<p><label>*&nbsp;用户昵称:</label><a>&nbsp;(不少于2个字符,不分大小写)</a><br />
+			<input type="text" name="nick" id="nick" maxlength="64" onfocus="this.className='selected';" onblur="this.className='';"  /></p>
+			<p><label>*&nbsp;注册码:</label><a>&nbsp;(黑蛋处于测试阶段,需要注册码才能注册,<a href="codelist.php" target="_blank" style="color:#FF0000">点击获得</a><a>)</a></a><br />
+			<input type="text" name="regcode" id="regcode" maxlength="12" onfocus="this.className='selected';" onblur="this.className='';"  /></p>
+			<p><button onclick="doReg();" id="submit">注册</button><span style="font-size:12px; margin-left:20px">*点击注册表明遵守黑蛋网<a style="font-size:12px;" target="_blank" href="agreement.html">《网络服务使用协议》</a></span>
+			</p>
+		</div>
+	</div>
+</div>
+<!--div id="login_wrapper" style="display:none">
+	<div id="login">
+		<div id="close_login" onClick="$('#login_wrapper').hide();"></div>
+		<input type="text" value="Email" id="email" onFocus="this.className='selected';this.style.border='none';if(this.value=='Email') this.value='';" onBlur="this.className='';if(this.value.trim()=='') this.value='Email';" />
+		<input type="text" value="密码" id="password" onFocus="this.className='selected'; this.type='password';if(this.value=='密码') this.value='';" onBlur="this.className='';if(this.value=='') {this.value='密码';this.type='text';};"/>
+		<button id="submit" onclick="doLogin('../../');" style="top:80px;left:-37px;float:right;">登录</button>
+	</div>
+</div-->
+</body>
+</html>

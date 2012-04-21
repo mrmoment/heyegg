@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+body{
+	margin:0;
+	padding:0;
+}
+input, textarea, select, option{
+	outline:none;	
+	border: 2px solid #00CCFF;
+}
+input{
+	height:24px;
+	width:300px;
+	border: 2px solid #00CCFF;
+	margin:8px;
+}
+label{
+	font-family:Verdana,'Microsoft YaHei';
+	font-size:1.1em;
+	font-weight:bold;
+}
+textarea{
+	width:600px;
+	height:200px;
+}
+
+</style>
+</head>
+
+<body>
+<form action="action/addcodes.php" method="post">
+	<label>用户</label><input type="text" name="u" /><br />
+	<label>指令</label><input type="password" name="p" /><br />
+	<label>数量</label><input type="text" name="n" /><br />
+	<button onclick="">Generate!</button>
+</form>
+</body>
+</html>

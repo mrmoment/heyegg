@@ -1,0 +1,99 @@
+* post/post-under-review db
+	-need to evaluate design tradeoff (two table or one?)
+		-done. ONE db for both posts.
+* postnew function
+	-done without the writing seperate post.html file.
+	-need disable local upload for image in editor page
+* load default function
+	-"no-type-parameter" loading is done for view mode.
+	-need do with type parameter
+		-done.
+	-review mode
+		-done.
+* page function
+	-done.
+* list view design
+	-container and closer done.
+	-need to paginate
+		-done.
+	-need to list rows
+		-done.
+	-consider loading abstract together with title, and reduce list_size to 5
+* list function
+	-loadEggsById not done
+		-done.
+	-handle empty list case
+		-done. don't handle.
+	-others done.
+* list page function
+	-done.
+%	-list pager overflow case
+		-done.
+* review function
+	-consider add reviewers to give feedbacks to poster
+	-others done.
+%	-review page tool button rotate
+		-done.
+* user favourate function
+%	-need to init like/unlike status on the icon when load a post
+		//-need to rebuild the mechanism (show two buttons, not one) to make it simpler
+		-done.
+	-others done.
+* comment view
+	-rough layout done.
+* comment function
+	-post new comment done.
+	-need to consider comment id (so for future deletion)
+		-partly done with timestamp.
+	-comment load mechanism (not all at a time, or firstly all, refine later)
+		-need to do small files - one comment one file in a dir
+			-done.
+* register page
+	-design / ui done.
+	-need to do registration process
+		-need to check invitation mechanism first
+			-done.
+		-others done.
+* user info view and link updates in other related pages
+	-view and load function done.
+	-need to handle parameter input for index.php and review.php
+		-done.
+	-no information yet
+%	-links should be added at all proper places (topbar, post author, comment author)
+* user info edit 
+	-no yet
+* messaging
+	-integrated jsMessage.
+%	-check out all alert places, and unify the style
+		-error: red, info: black
+%	-define alert strings as constant
+
+-------------------
+
+-> Masking (especially in post.php)
+
+
+-------------------
+
+* selection pop-up view
+* selection comment function
+* selection user-focus function*
+* user credit function*
+* add post view counts (design the method & rule first)
+
+-------------------
+* score mechanism
+
+-------------------
+
+* allow anonymous post submission?
+* all masking effect for loading (load post/list/paging, login, logout, like, comment, score, submit, review)
+
+----------------------------------
+* Check all similar pages are with same frame ui and functions
+* TEST logics that i can think... (remember the test script written down)
+* TEST on the deployed environment...
+
+----------------------------------
+* check SQL injection (add keyword judgement for input parameters)
+* data & code backup mechanism

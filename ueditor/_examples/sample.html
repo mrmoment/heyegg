@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>    
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title></title>
+    <script type="text/javascript" charset="utf-8" src="../editor_config.js"></script>    
+    <!--使用版-->
+    <script type="text/javascript" charset="utf-8" src="../editor_all_min.js"></script>
+    <!--开发版-/->
+    <script type="text/javascript" charset="utf-8" src="editor_api.js">
+        paths = [
+            'editor.js',
+            'core/browser.js',
+            'core/utils.js',
+            'core/EventBase.js',
+            'core/dom/dom.js',
+            'core/dom/dtd.js',
+            'core/dom/domUtils.js',
+            'core/dom/Range.js',
+            'core/dom/Selection.js',
+            'core/Editor.js',
+            'commands/inserthtml.js',
+            'commands/image.js',
+            'commands/justify.js',
+            'commands/font.js',
+            'commands/link.js',
+            'commands/map.js',
+            'commands/iframe.js',
+            'commands/removeformat.js',
+            'commands/blockquote.js',
+            'commands/indent.js',
+            'commands/print.js',
+            'commands/preview.js',
+            'commands/spechars.js',
+            'commands/emotion.js',
+            'commands/selectall.js',
+            'commands/paragraph.js',
+            'commands/directionality.js',
+            'commands/horizontal.js',
+            'commands/time.js',
+            'commands/rowspacing.js',
+            'commands/lineheight.js',
+            'commands/cleardoc.js',
+            'commands/anchor.js',
+            'commands/delete.js',
+            'commands/wordcount.js',
+            'commands/image.js',
+            'plugins/pagebreak/pagebreak.js',
+             'plugins/checkimage/checkimage.js',
+            'plugins/undo/undo.js',
+            'plugins/paste/paste.js',           //粘贴时候的提示依赖了UI
+            'plugins/list/list.js',
+            'plugins/source/source.js',
+            'plugins/shortcutkeys/shortcutkeys.js',
+            'plugins/enterkey/enterkey.js',
+            'plugins/keystrokes/keystrokes.js',
+            'plugins/fiximgclick/fiximgclick.js',
+            'plugins/autolink/autolink.js',
+            'plugins/autoheight/autoheight.js',
+            'plugins/autofloat/autofloat.js',  //依赖UEditor UI,在IE6中，会覆盖掉body的背景图属性
+            'plugins/highlight/highlight.js',
+            'plugins/serialize/serialize.js',
+            'plugins/video/video.js',
+            'plugins/table/table.js',
+            'plugins/contextmenu/contextmenu.js',
+            'plugins/pagebreak/pagebreak.js',
+            'plugins/basestyle/basestyle.js',
+            'plugins/elementpath/elementpath.js',
+            'plugins/formatmatch/formatmatch.js',
+            'plugins/searchreplace/searchreplace.js',
+            'ui/ui.js',
+            'ui/uiutils.js',
+            'ui/uibase.js',
+            'ui/separator.js',
+            'ui/mask.js',
+            'ui/popup.js',
+            'ui/colorpicker.js',
+            'ui/tablepicker.js',
+            'ui/stateful.js',
+            'ui/button.js',
+            'ui/splitbutton.js',
+            'ui/colorbutton.js',
+            'ui/tablebutton.js',
+            'ui/toolbar.js',
+            'ui/menu.js',
+            'ui/combox.js',
+            'ui/dialog.js',
+            'ui/menubutton.js',
+            'ui/datebutton.js',
+            'ui/editorui.js',
+            'ui/editor.js',
+            'ui/multiMenu.js'
+        ];
+    </script-->
+    <link rel="stylesheet" type="text/css" href="../themes/default/ueditor.css"/>
+</head>
+<body>
+<script type="text/plain" id="myEditor" class="myEditor">
+
+</script>
+<script type="text/javascript">
+    var editor_a = new baidu.editor.ui.Editor();
+    editor_a.render('myEditor');	
+    //remove unused tools
+    var unused=Array(6,7,8,15,16,18,19,20,21,50,57,88,89,90,122,133,138,144,166,167,168,169,170,171,172,173,174,175,176,177,184,186);
+    //alert(unused+";"+unused.length);
+    var i=0;
+    for(; i<unused.length; i++){
+    	hideTool('edui'+unused[i]);
+  	}
+    
+    function hideTool(tid){
+    	var tobj=document.getElementById(tid);
+    	if(tobj){
+    		/*//This is to remove the tool, but may lead to exceptions when typing in the editor
+    		var tparent=tobj.parentNode;
+    		tparent.removeChild(tobj);
+    		*/
+    		tobj.style.display="none !important";    		
+    	}
+    }
+</script>
+</body>
+
+
+</html>

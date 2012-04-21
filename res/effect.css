@@ -1,0 +1,43 @@
+.tran9{
+	transform:rotate(9deg) translate(-8px,0);
+	-ms-transform:rotate(9deg) translate(-8px,0); /* IE 9 */
+	-moz-transform:rotate(9deg) translate(-8px,0); /* Firefox */
+	-webkit-transform:rotate(9deg) translate(-8px,0); /* Safari and Chrome */
+	-o-transform:rotate(10deg) translate(-8px,0); /* Opera */
+}
+.tran-9{
+	transform:rotate(-9deg) translate(-8px,0);
+	-ms-transform:rotate(-9deg) translate(-8px,0); 
+	-moz-transform:rotate(-9deg) translate(-8px,0);
+	-webkit-transform:rotate(-9deg) translate(-8px,0); 
+	-o-transform:rotate(-9deg) translate(-8px,0); 
+}
+.tran3{
+	transform:rotate(3deg);
+	-ms-transform:rotate(3deg); 
+	-moz-transform:rotate(3deg); 
+	-webkit-transform:rotate(3deg); 
+	-o-transform:rotate(3deg);
+}
+.tran-3{
+	transform:rotate(-3deg);
+	-ms-transform:rotate(-3deg);
+	-moz-transform:rotate(-3deg); 
+	-webkit-transform:rotate(-3deg); 
+	-o-transform:rotate(-3deg);
+}
+.tran6{
+	transform:rotate(6deg) translate(-3px,0);
+	-ms-transform:rotate(6deg) translate(-3px,0); 
+	-moz-transform:rotate(6deg) translate(-3px,0); 
+	-webkit-transform:rotate(6deg) translate(-3px,0); 
+	-o-transform:rotate(6deg) translate(-3px,0);
+}
+.tran-6{
+	transform:rotate(-6deg) translate(-3px,0);
+	-ms-transform:rotate(-6deg) translate(-3px,0);
+	-moz-transform:rotate(-6deg) translate(-3px,0); 
+	-webkit-transform:rotate(-6deg) translate(-3px,0);
+	-o-transform:rotate(-6deg) translate(-3px,0); 
+}
+

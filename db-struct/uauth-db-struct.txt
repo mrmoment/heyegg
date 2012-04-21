@@ -1,0 +1,15 @@
+#	字段	类型	整理	属性	空	默认	额外	操作
+	 1	id	int(11)			否	无	AUTO_INCREMENT	  修改	  删除	 更多 
+	 2	email	varchar(128)	utf8_general_ci		否	无		  修改	  删除	 更多 
+	 3	nickname	varchar(128)	utf8_general_ci		否	无		  修改	  删除	 更多 
+	 4	passwd	varchar(128)	utf8_general_ci		否	无		  修改	  删除	 更多 
+	 5	group	tinyint(4)			否	1		  修改	  删除	 更多 
+	 6	create_time	datetime			否	无		  修改	  删除	 更多   全选 / 全不选 选中项：   浏览  修改  删除  主键  唯一  索引  全文搜索
+打印预览  规划表结构 
+ 添加  个字段 于表结尾  于表开头  于 之后 
+索引: 
+
+操作	键名	类型	唯一	紧凑	字段	基数	整理	空	注释
+ 编辑	 删除	PRIMARY	BTREE	是	否	id	4	A		
+ 编辑	 删除	email	BTREE	是	否	email	0	A		
+nickname	4	A	

@@ -1,0 +1,10 @@
+#	字段	类型	整理	属性	空	默认	额外	操作
+	 1	user_email	varchar(128)	utf8_general_ci		否	无		  修改	  删除	 更多 
+	 2	liked	int(11)			否	无		  修改	  删除	 更多 
+	 3	like_posts	text	utf8_general_ci		否	无		  修改	  删除	 更多   全选 / 全不选 选中项：   浏览  修改  删除  主键  唯一  索引
+打印预览  关系查看  规划表结构  追踪表 
+ 添加  个字段 于表结尾  于表开头  于 之后 
+索引: 
+
+操作	键名	类型	唯一	紧凑	字段	基数	整理	空	注释
+ 编辑	 删除	PRIMARY	BTREE	是	否	user_email	1	A		
