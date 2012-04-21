@@ -6,7 +6,7 @@ if( !isset($_SESSION['admin']) || !isset($_POST['u']) || !isset($_POST['p']) || 
 
 $uname=strtolower($_POST['u']);
 $passwd=$_POST['p'];
-if( strcmp($uname,"maxadmin")!=0 || strcmp($passwd,"iamsirui_tmain()")!=0 ){
+if( strcmp($uname,"maxadmin")!=0 || strcmp($passwd,"$ADMIN_PASSWD")!=0 ){
 	sleep(10);
 	return;
 }
