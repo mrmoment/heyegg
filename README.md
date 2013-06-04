@@ -2,4 +2,4 @@ heyegg
 ======
 
 Heyegg is a Digg-like yet reading friendly news service. It allows users to submit and evaluate news posts. Posts with recommendations will be public accessible. Heyegg is built upon jQuery, PHP, and MySQL.
-A sample site is available at http://www.heyegg.com (will be maintained at least to Jun 2012 due to web hosting reasons).
+A sample site is available at http://www.heyegg.com (closed now).
